@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>why</title>
+      <link href="/2024/07/14/why/"/>
+      <url>/2024/07/14/why/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><code class="hljs /**"> * A simple implementation of a LinkedList in JavaScript<br> */<br><br>// Node class represents a node in the linked list<br>class Node &#123;<br>  constructor(data) &#123;<br>    this.data = data;<br>    this.next = null;<br>  &#125;<br>&#125;<br><br><br><br>// LinkedList class provides various methods to manipulate the list<br>class LinkedList &#123;<br>  constructor() &#123;<br>    this.head = null;<br>    this.size = 0;<br>  &#125;<br><br>  // Add a new node with the given data at the end of the list<br>  add(data) &#123;<br>    const newNode = new Node(data);<br>    if (this.head === null) &#123;<br>      this.head = newNode;<br>    &#125; else &#123;<br>      let current = this.head;<br>      while (current.next) &#123;<br>        current = current.next;<br>      &#125;<br>      current.next = newNode;<br>    &#125;<br>    this.size++;<br>  &#125;<br><br>  // Remove the node with the given data<br>  remove(data) &#123;<br>    let current = this.head;<br>    let previous = null;<br><br>    while (current) &#123;<br>      if (current.data === data) &#123;<br>        if (previous === null) &#123;<br>          this.head = current.next;<br>        &#125; else &#123;<br>          previous.next = current.next;<br>        &#125;<br>        this.size--;<br>        return current.data;<br>      &#125;<br>      previous = current;<br>      current = current.next;<br>    &#125;<br>    return null;<br>  &#125;<br><br>  // Check if the list contains a node with the given data<br>  contains(data) &#123;<br>    let current = this.head;<br>    while (current) &#123;<br>      if (current.data === data) &#123;<br>        return true;<br>      &#125;<br>      current = current.next;<br>    &#125;<br>    return false;<br>  &#125;<br><br>  // Print the contents of the list<br>  print() &#123;<br>    let current = this.head;<br>    let result = &#x27;&#x27;;<br>    while (current) &#123;<br>      result += current.data + &#x27; -&gt; &#x27;;<br>      current = current.next;<br>    &#125;<br>    result += &#x27;null&#x27;;<br>    console.log(result);<br>  &#125;<br><br>  // Get the size of the list<br>  getSize() &#123;<br>    return this.size;<br>  &#125;<br>&#125;<br><br>// Test the LinkedList class<br>const list = new LinkedList();<br>list.add(10);<br>list.add(20);<br>list.add(30);<br>list.print(); // Output: 10 -&gt; 20 -&gt; 30 -&gt; null<br><br>console.log(&#x27;Size of list:&#x27;, list.getSize()); // Output: Size of list: 3<br>console.log(&#x27;Contains 20:&#x27;, list.contains(20)); // Output: Contains 20: true<br><br>list.remove(20);<br>list.print(); // Output: 10 -&gt; 30 -&gt; null<br>console.log(&#x27;Contains 20:&#x27;, list.contains(20)); // Output: Contains 20: false<br>console.log(&#x27;Size of list:&#x27;, list.getSize()); // Output: Size of list: 2<br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hello-world</title>
+      <link href="/2024/07/14/hello-world/"/>
+      <url>/2024/07/14/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>这是我的正式第一篇博客哈哈哈，写博客配环境好不容易呀，根本不明白都是什么东西，花了很多时间和精力去学习如何使用hexo以及如何配置环境</p><p>下面是一个简单的 c++ 代码示例：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br><br>std::cout &lt;&lt; <span class="hljs-string">&quot;Hello, World!&quot;</span>&lt;&lt; std::endl; <br><br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>&#125;<br><br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无引号</title>
+      <link href="/2024/07/14/%E6%97%A0%E5%BC%95%E5%8F%B7/"/>
+      <url>/2024/07/14/%E6%97%A0%E5%BC%95%E5%8F%B7/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>双引号</title>
+      <link href="/2024/07/14/%E5%8F%8C%E5%BC%95%E5%8F%B7/"/>
+      <url>/2024/07/14/%E5%8F%8C%E5%BC%95%E5%8F%B7/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>单引号</title>
+      <link href="/2024/07/14/%E5%8D%95%E5%BC%95%E5%8F%B7/"/>
+      <url>/2024/07/14/%E5%8D%95%E5%BC%95%E5%8F%B7/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>I wish it is the last time</title>
+      <link href="/2024/07/14/I-wish-it-is-the-last-time/"/>
+      <url>/2024/07/14/I-wish-it-is-the-last-time/</url>
+      
+        <content type="html"><![CDATA[<ol><li>在单个文件中作用不太明显</li><li>如果有多个文件，用头文件很方便</li></ol><p><strong>头文件（Header files）</strong> 通常包含了接口和声明，在编译时被其他源文件包含。它们不同于实现文件（.cpp），而是为了告知编译器某些符号的存在及其类型。</p><p><strong>内联函数（inline functions）</strong> 是一种优化手段，告诉编译器在调用处将函数的代码直接插入，而不是跳转到函数定义处执行。这对于简单的小函数可以提高性能，但对于复杂的函数可能不划算，因为它增加了代码体积。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Header files 的重要性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大功告成</title>
+      <link href="/2024/07/14/%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90%EF%BC%81%EF%BC%81%EF%BC%81/"/>
+      <url>/2024/07/14/%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 就是今天的今天 </tag>
+            
+            <tag> 我觉得我的博客搭建成功 </tag>
+            
+            <tag> 哪里有问题我请问呢 </tag>
+            
+            <tag> 我疯了 </tag>
+            
+            <tag> 不是为什么啊 </tag>
+            
+            <tag> 怎么如此奇怪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my-first-blog</title>
+      <link href="/2024/07/13/%E5%8F%AF%E6%81%B6%E5%95%8A/"/>
+      <url>/2024/07/13/%E5%8F%AF%E6%81%B6%E5%95%8A/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文章链接</title>
+      <link href="/2024/07/13/%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5/"/>
+      <url>/2024/07/13/%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5/</url>
+      
+        <content type="html"><![CDATA[<p>这是我的第一个博客</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
