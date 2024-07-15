@@ -1,0 +1,43 @@
+/* 设置代码块的背景颜色和边框 */
+.hljs {
+  background: #2e3440; /* 你可以根据需要调整背景颜色 */
+  color: #d8dee9; /* 字体颜色 */
+  border-radius: 8px; /* 圆角边框 */
+  padding: 1em; /* 内边距 */
+  font-family: 'Source Code Pro', monospace; /* 字体 */
+}
+
+/* 设置行号的样式 */
+.hljs-ln-numbers {
+  background: #2e3440; /* 使行号的背景颜色与代码块一致 */
+  color: #d8dee9; /* 行号字体颜色 */
+  border-right: 1px solid #4c566a; /* 行号右边的边框 */
+}
+
+/* 设置高亮代码的样式 */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-name,
+.hljs-strong {
+  color: #81a1c1; /* 关键字颜色 */
+}
+
+/* 其他不同类型代码的颜色 */
+.hljs-comment {
+  color: #616e88; /* 注释颜色 */
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #a3be8c; /* 字符串颜色 */
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-type,
+.hljs-params {
+  color: #b48ead; /* 数字和类型颜色 */
+}

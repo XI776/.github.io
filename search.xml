@@ -8,7 +8,7 @@
       <link href="/2024/07/14/why/"/>
       <url>/2024/07/14/why/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs /**"> * A simple implementation of a LinkedList in JavaScript   <br><br> */<br><br>// Node class represents a node in the linked list     <br><br>class Node &#123;     <br><br>  constructor(data) &#123;     <br><br>    this.data = data;     <br><br>    this.next = null;      <br><br>  &#125;    <br><br>&#125;     <br><br>      <br><br></code></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<pre><code class="javascript">/** * A simple implementation of a LinkedList in JavaScript */// Node class represents a node in the linked listclass Node &#123;  constructor(data) &#123;    this.data = data;    this.next = null;  &#125;&#125;</code></pre>]]></content>
       
       
       
@@ -21,7 +21,7 @@
       <link href="/2024/07/14/hello-world/"/>
       <url>/2024/07/14/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>这是我的正式第一篇博客哈哈哈，写博客配环境好不容易呀，根本不明白都是什么东西，花了很多时间和精力去学习如何使用hexo以及如何配置环境</p><p>下面是一个简单的 c++ 代码示例：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span>    </span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>   </span><br><span class="hljs-function"></span>&#123;   <br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Hello, World!&quot;</span> &lt;&lt; std::endl;     <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;    <br>&#125;<br><br></code></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>这是我的正式第一篇博客哈哈哈，写博客配环境好不容易呀，根本不明白都是什么东西，花了很多时间和精力去学习如何使用hexo以及如何配置环境</p><p>下面是一个简单的C++代码示例：</p><pre><code class="cpp">#include &lt;iostream&gt;int main()&#123;    std::cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; std::endl;    return 0;&#125;</code></pre>]]></content>
       
       
       
@@ -92,7 +92,7 @@
       <link href="/2024/07/14/%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90%EF%BC%81%EF%BC%81%EF%BC%81/"/>
       <url>/2024/07/14/%E5%A4%A7%E5%8A%9F%E5%91%8A%E6%88%90%EF%BC%81%EF%BC%81%EF%BC%81/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<pre><code class="C">#include &lt;stdio.h&gt;int main()&#123;    printf(&quot;Hello, World&quot;);    return 0;&#125;</code></pre>]]></content>
       
       
       
