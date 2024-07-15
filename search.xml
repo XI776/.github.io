@@ -8,7 +8,7 @@
       <link href="/2024/07/14/why/"/>
       <url>/2024/07/14/why/</url>
       
-        <content type="html"><![CDATA[<pre><code class="javascript">/** * A simple implementation of a LinkedList in JavaScript */// Node class represents a node in the linked listclass Node &#123;  constructor(data) &#123;    this.data = data;    this.next = null;  &#125;&#125;</code></pre>]]></content>
+        <content type="html"><![CDATA[<pre><code>javascript/** * A simple implementation of a LinkedList in JavaScript */// Node class represents a node in the linked listclass Node &#123;  constructor(data) &#123;    this.data = data;    this.next = null;  &#125;&#125;</code></pre>]]></content>
       
       
       
@@ -21,7 +21,7 @@
       <link href="/2024/07/14/hello-world/"/>
       <url>/2024/07/14/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>这是我的正式第一篇博客哈哈哈，写博客配环境好不容易呀，根本不明白都是什么东西，花了很多时间和精力去学习如何使用hexo以及如何配置环境</p><p>下面是一个简单的C++代码示例：</p><pre><code class="cpp">#include &lt;iostream&gt;int main()&#123;    std::cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; std::endl;    return 0;&#125;</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>这是我的正式第一篇博客哈哈哈，写博客配环境好不容易呀，根本不明白都是什么东西，花了很多时间和精力去学习如何使用hexo以及如何配置环境</p><p>下面是一个简单的C++代码示例：</p><pre><code>cpp    #include &lt;iostream&gt;int main()&#123;    std::cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; std::endl;    return 0;&#125;</code></pre>]]></content>
       
       
       
